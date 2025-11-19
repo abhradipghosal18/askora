@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #eef1ff;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffffff;
+  padding: 25px 0;
+  border-bottom: 1px solid #ccd0ff;
+  text-align: center;
+}
+
+nav {
+  margin-top: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3b64ff;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d5d7eb;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.search {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccd0ff;
+  margin-bottom: 30px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccd0ff;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+button, input[type="submit"] {
+  background: #3b64ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: #2b4ec9;
+}
+
+.profile-box {
+  background: #ffffff;
+  padding: 30px;
+  border: 1px solid #d5d7eb;
+  border-radius: 12px;
+}
+
+.profile-header {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-header img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 3px solid #3b64ff;
+}
+
+.post-item {
+  border-bottom: 1px solid #d5d7eb;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+}
+
+.post-actions button {
+  background: #e6e9ff;
+  color: #3b64ff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+}
