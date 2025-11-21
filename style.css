@@ -10,6 +10,9 @@ body {
   color: #222;
   line-height: 1.6;
 }
+nav a:hover {
+  color: #2b4ec9;
+}
 
 header {
   background: #ffffff;
@@ -117,6 +120,11 @@ button:hover, input[type="submit"]:hover {
   border-radius: 20px;
   padding: 8px 16px;
   font-size: 14px;
+}
+
+.post-actions button:hover {
+   background-color: #2b4ec9;
+   color: white;
 }
 
 @media (max-width: 600px) {
