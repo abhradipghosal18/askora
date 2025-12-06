@@ -1,71 +1,113 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>askora | Posts</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <h1>askora</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="posts.html">Posts</a>
-    <a href="profile.html">Profile</a>
-    <a href="login.html">Login</a>
-  </nav>
-</header>
+  <header>
+    <h1>askora</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="posts.html">Posts</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
 
-<main class="container">
+  <main class="container">
 
-  <div class="card">
-    <h2>Create Post</h2>
-    <form>
-      <input type="text" placeholder="Post Title">
-      <textarea placeholder="Write something..." rows="3"></textarea>
-      <button>Post</button>
-    </form>
-  </div>
-
-  <h2>Recent Posts</h2>
-
-  <div class="card post-item">
-    <h3>How do you relax before exams?</h3>
-    <p>Share your tips.</p>
-    <div class="post-actions">
-      <button>Like</button>
-      <button>Comment</button>
+    <div class="card">
+      <h2>Create Post</h2>
+      <form>
+        <input type="text" placeholder="Post Title">
+        <textarea placeholder="Write something..." rows="3"></textarea>
+        <div class="file-inputs">
+          <label class="file-label">
+            📷 Add Photo
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+          </label>
+          <label class="file-label">
+            🎥 Add Video
+            <input type="file" id="videoInput" accept="video/*" style="display: none;">
+          </label>
+        </div>
+        <div id="media-preview"></div>
+        <button>Post</button>
+      </form>
     </div>
-  </div>
 
-  <div class="card post-item">
-    <h3>Favourite campus food?</h3>
-    <p>Your go-to place?</p>
-    <div class="post-actions">
-      <button>Like</button>
-      <button>Comment</button>
+    <h2>Recent Posts</h2>
+
+    <div class="card post-item">
+      <h3>How do you relax before exams?</h3>
+      <p>Share your tips.</p>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
     </div>
-  </div>
 
-  <div class="card post-item">
-    <h3>How much do you love football?</h3>
-    <p>Ronaldo is the goat. 5 time Ballon d'or winner.</p>
-    <div class="post-actions">
-      <button>Like</button>
-      <button>Comment</button>
+    <div class="card post-item">
+      <h3>Favourite campus food?</h3>
+      <p>Your go-to place?</p>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
     </div>
-  </div>
 
-  <div class="card post-item">
-    <h3>Predict your ASHES score?</h3>
-    <p>Can AUS beat ENG in this series?</p>
-    <div class="post-actions">
-      <button>Like</button>
-      <button>Comment</button>
+    <div class="card post-item">
+      <h3>How much do you love football?</h3>
+      <p>Ronaldo is the goat. 5 time Ballon d'or winner.</p>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
     </div>
-  </div>
 
-</main>
+    <div class="card post-item">
+      <h3>Predict your ASHES score?</h3>
+      <p>Can AUS beat ENG in this series?</p>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
+    </div>
 
+    <div class="card post-item">
+      <h3>Is VR the future of gaming?</h3>
+      <p>Just tried the Quest 3, it's mind-blowing!</p>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
+    </div>
+
+    <div class="card post-item">
+      <h3>Photography tips for beginners</h3>
+      <p>How to master manual mode on DSLR?</p>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
+    </div>
+
+    <div class="card post-item">
+      <h3>Favorite book of all time?</h3>
+      <p>Looking for suggestions, preferably mystery or thriller.</p>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

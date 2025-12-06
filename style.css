@@ -10,6 +10,7 @@ body {
   color: #222;
   line-height: 1.6;
 }
+
 nav a:hover {
   color: #2b4ec9;
 }
@@ -63,7 +64,8 @@ nav a {
   margin-bottom: 30px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 14px;
   border-radius: 10px;
@@ -72,7 +74,8 @@ form input, form textarea {
   font-size: 15px;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
   background: #3b64ff;
   color: white;
   border: none;
@@ -83,7 +86,8 @@ button, input[type="submit"] {
   margin-top: 8px;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover,
+input[type="submit"]:hover {
   background: #2b4ec9;
 }
 
@@ -123,8 +127,8 @@ button:hover, input[type="submit"]:hover {
 }
 
 .post-actions button:hover {
-   background-color: #2b4ec9;
-   color: white;
+  background-color: #2b4ec9;
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -141,4 +145,109 @@ button:hover, input[type="submit"]:hover {
   .container {
     padding: 0 12px;
   }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-active {
+  animation: spin 1s ease-in-out;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.file-inputs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.file-label {
+  background: #e6e9ff;
+  color: #3b64ff;
+  border: 1px dashed #3b64ff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.2s;
+}
+
+.file-label:hover {
+  background: #dbe0ff;
+}
+
+#media-preview {
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+#media-preview img,
+#media-preview video {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  border: 1px solid #d5d7eb;
+  margin-top: 10px;
 }
